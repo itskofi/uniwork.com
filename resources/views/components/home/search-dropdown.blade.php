@@ -4,7 +4,7 @@
     <div class="my-auto">
         <span class="font-semibold">{{ $label }}</span>
     </div>
-    <div class="relative"><input class="border-none" type="text" size="32" placeholder="{{ $placeholder }}"> </div>
+    <div class="relative"><input class="border-none text-sm" type="text" size="32" placeholder="{{ $placeholder }}"> </div>
     <div class="relative">
         <div class="absolute inset-0 top-3">
             <div x-on:click="search = !search" class="">

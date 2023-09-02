@@ -1,9 +1,9 @@
 <div>
     @unless (empty($jobs))
-        <div class="">{{ $jobs->count() }} Jobs found</div>
+        <div class="text-sm">{{ $jobs->count() }} Jobs found</div>
         <div class="flex flex-col space-y-2">
             @foreach ($jobs as $job)
-                <div class="border border-black rounded-xl px-2">
+                <div class="border border-black rounded-xl p-3">
                     <a href="/viewjob/{{ $loop->index }}" class="">
                         <div class="">
                             <span class="font-semibold text-base">{{ $job['title'] }}</span>
