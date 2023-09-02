@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Livewire\ViewJobController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/viewjob/{id}', [ViewJobController::class, 'index']);
 
 /* Route::middleware([
     'auth:sanctum',
