@@ -23,11 +23,11 @@
 
     <div class="w-full">
         <div class="max-w-5xl mx-auto">
-            <div class="flex flex-col space-y-1 p-1">
+            <div class="flex flex-col space-y-1 p-4">
                 <x-home.search-dropdown label="Was" placeholder="Jobtitel, Stichworte oder Unternehmen" />
                 <x-home.search-dropdown label="Wo" placeholder="Bundesland, Stadt oder Postleitzahl" />
             </div>
-            <div class="p-1">
+            <div class="p-4">
                 <livewire:jobboard/>
             </div>
         </div>
