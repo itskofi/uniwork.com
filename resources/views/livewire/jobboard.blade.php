@@ -4,7 +4,7 @@
         <div class="flex flex-col space-y-2">
             @foreach ($jobs as $job)
                 <div class="border border-black rounded-xl px-2">
-                    <a href="/viewjob=1" class="">
+                    <a href="/viewjob/{{$loop->index}}" class="">
                         <div class="">
                             <span class="font-semibold">{{ $job['title'] }},</span>
                             <span class="font-semibold">{{ $job['place'] }}</span>

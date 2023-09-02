@@ -101,4 +101,9 @@ class Jobs
 	{
 		return $this->exampleJobs;
 	}
+
+  public function find($id) : Array
+  {
+    return $this->exampleJobs[$id];
+  }
 }
