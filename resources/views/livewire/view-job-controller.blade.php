@@ -3,7 +3,7 @@
 <div>
     @section('content')
         @unless (empty($job))
-            <div class="border border-gray-200 rounded-xl shadow-md p-3">
+            <div class="border border-gray-200 rounded-b-xl shadow-md p-3">
                 <div class="">
                     <span class="font-semibold text-2xl">{{ $job['title'] }}</span>
                 </div>
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col space-y-8 border border-gray-200 rounded-xl shadow-md p-3">
+            <div class="mt-2 flex flex-col space-y-8 border border-gray-200 rounded-xl shadow-md p-3">
                 <div class="text-base">
                     {{ $job['description'] }}
                 </div>
