@@ -10,6 +10,7 @@
             <span class="font-semibold text-xl tracking-tight">uniwork.de</span>
         </div>
     </a>
+
     <div class="block lg:hidden">
         <button
             class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-200 hover:border-gray-200">
@@ -34,4 +35,19 @@
             </a>
         </div>
     </div>
+
+    <div class="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200 mr-4">
+                Profile
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200 mr-4">
+                Applications
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200">
+                Settings
+            </a>
+        </div>
+    </div>
+
 </nav>
