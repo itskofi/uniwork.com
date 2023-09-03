@@ -4,8 +4,14 @@
     <div class="my-auto">
         <span class="font-semibold">{{ $label }}</span>
     </div>
-    <div class="relative"><input class="border-none text-sm" type="text" size="30" placeholder="{{ $placeholder }}">
+
+    <div class="relative sm:hidden">
+      <input class="border-none text-sm" type="text" size="30" placeholder="{{ $placeholder }}">
     </div>
+    <div class="relative hidden sm:block">
+      <input class="border-none text-sm" type="text" size="27" placeholder="{{ $placeholder }}">
+    </div>
+
     <div class="relative my-auto justify-self-end">
         <div x-on:click="search = !search" class="">
             <svg x-show="search == false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
