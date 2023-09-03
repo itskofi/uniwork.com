@@ -23,6 +23,7 @@
 
     <div class="w-full">
         <div class="max-w-5xl mx-auto">
+          <x-navigation/>
             @yield('content')
         </div>
     </div>
