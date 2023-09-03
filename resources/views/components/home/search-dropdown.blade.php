@@ -9,7 +9,7 @@
       <input class="border-none text-sm" type="text" size="30" placeholder="{{ $placeholder }}">
     </div>
     <div class="relative hidden sm:block">
-      <input class="border-none text-sm" type="text" size="27" placeholder="{{ $placeholder }}">
+      <input class="border-none text-sm sm:w-52 md:w-64 lg:w-96" type="text" placeholder="{{ $placeholder }}">
     </div>
 
     <div class="relative my-auto justify-self-end">

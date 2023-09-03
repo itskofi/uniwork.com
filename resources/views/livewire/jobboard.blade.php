@@ -1,6 +1,6 @@
 <div>
     @unless (empty($jobs))
-        <div class="text-sm">{{ $jobs->count() }} Jobs found</div>
+        <div class="text-sm py-2">{{ $jobs->count() }} Jobs found</div>
         <div class="grid grid-cols-1 sm:grid-cols-2">
             <div class="flex flex-col space-y-2 max-h-screen overflow-hidden overflow-y-scroll">
                 @foreach ($jobs as $job)

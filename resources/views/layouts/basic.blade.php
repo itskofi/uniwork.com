@@ -22,8 +22,8 @@
 <body class="font-sans antialiased">
 
     <div class="w-full">
+        <x-navigation />
         <div class="max-w-5xl mx-auto">
-          <x-navigation/>
             @yield('content')
         </div>
     </div>
