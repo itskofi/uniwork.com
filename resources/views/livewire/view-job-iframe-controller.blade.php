@@ -1,7 +1,4 @@
-@extends('layouts.basic')
-
-<div>
-@section('content')
+<div class="">
     @unless (empty($job))
         <div class="border border-gray-200 rounded-b-xl shadow-md p-3">
             <div class="">
@@ -80,5 +77,4 @@
             <strong>Whoops!</strong> No job found.
         </div>
     @endunless
-@endsection
 </div>

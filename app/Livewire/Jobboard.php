@@ -15,6 +15,11 @@ class Jobboard extends Component
         $this->jobs = collect((new Jobs())->get());
     }
 
+    public function displayJobDetails(int $id) : void
+    {
+        $this->dispatch('lookUp', $id);
+    }
+
     public function render()
     {
         return view('livewire.jobboard');

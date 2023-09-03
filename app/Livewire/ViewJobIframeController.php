@@ -3,14 +3,16 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use App\Services\Jobs;
 use Illuminate\Support\Collection;
+use App\Services\Jobs;
 
-class ViewJobController extends Component
+class ViewJobIframeController extends Component
 {
     public Collection $job;
 
-    public function index(int $id)
+    protected $listeners = ['lookUp'];
+
+    public function lookUp(int $id)
     {
         $this->job = collect((new Jobs())->find($id));
         return view('livewire.view-job-controller', ['job' => $this->job]);
@@ -18,6 +20,6 @@ class ViewJobController extends Component
 
     public function render()
     {
-        return view('livewire.view-job-controller');
+        return view('livewire.view-job-iframe-controller');
     }
 }
