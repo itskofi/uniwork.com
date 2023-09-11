@@ -1,3 +1,3 @@
 This is a copy of the indeed.de site
 
-<embed src="screenshot.pdf" type="application/pdf">
+ <img src="screenshot.png" alt="some text"  width="2000">
