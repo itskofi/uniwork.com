@@ -1,3 +1,3 @@
-This is a copy of the indeed.de site
+I tried to build a simple frontend for job offers.
 
  <img src="screenshot.png" alt="some text"  width="2000">
